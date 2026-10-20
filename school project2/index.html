@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مبادرة مدرسة خضراء | GreenSchool Project</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Cairo) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Cairo', sans-serif; scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(135deg, #064e3b 0%, #022c22 50%, #0f172a 100%); }
+        .hero-glow { background: radial-gradient(circle at center, rgba(16, 185, 129, 0.2) 0%, transparent 70%); }
+        .emerald-gradient { background: linear-gradient(135deg, #10b981 0%, #059669 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.04); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-emerald-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-3 space-x-reverse">
+                    <div class="w-12 h-12 rounded-2xl emerald-gradient flex items-center justify-center text-white text-2xl shadow-lg shadow-emerald-500/30">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-black text-white block leading-tight">مدرسة خضراء</span>
+                        <span class="text-xs text-emerald-400 font-semibold">مشروع الاستدامة المدرسية</span>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-8 space-x-reverse font-semibold text-slate-300">
+                    <a href="#about" class="hover:text-emerald-400 transition">عن المبادرة</a>
+                    <a href="#calculator" class="hover:text-emerald-400 transition">حاسبة الأثر البيئي</a>
+                    <a href="#pillars" class="hover:text-emerald-400 transition">محاور العمل</a>
+                    <a href="#goals" class="hover:text-emerald-400 transition">الأهداف والأرقام</a>
+                </div>
+
+                <div>
+                    <a href="#calculator" class="emerald-gradient text-white font-bold px-6 py-2.5 rounded-xl shadow-lg hover:shadow-emerald-500/25 transition transform hover:-translate-y-0.5 inline-flex items-center gap-2">
+                        <span>احسب أثرك البيئي</span>
+                        <i class="fa-solid fa-calculator text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg min-h-screen pt-32 pb-20 flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 hero-glow"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-sm font-semibold px-4 py-1.5 rounded-full inline-block mb-6">
+                🌱 مشروع منافس في مسابقة الابتكار والبيئة المدرسية
+            </span>
+            <h1 class="text-4xl md:text-7xl font-black mb-6 leading-tight">
+                نحو بيئة مدرسية مستدامة <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400">وذكية من أجل المستقبل</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10 font-light leading-relaxed">
+                منصة تفاعلية تهدف لإدارة وتدوير المخلفات المدرسية وترشيد استهلاك الطاقة والمياه عبر تحفيز الطلاب واستخدام التقنيات الحديثة.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#calculator" class="emerald-gradient text-white text-lg font-bold px-8 py-4 rounded-xl shadow-xl hover:opacity-90 transition">
+                    تجربة حاسبة التدوير <i class="fa-solid fa-seedling mr-2"></i>
+                </a>
+                <a href="#about" class="bg-slate-800/80 hover:bg-slate-800 text-white border border-slate-700 text-lg font-semibold px-8 py-4 rounded-xl transition backdrop-blur-sm">
+                    تفاصيل الفكرة للجنة التحكيم
+                </a>
+            </div>
+
+            <!-- Eco Impact Bar -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mt-20 p-6 glass-card rounded-2xl">
+                <div>
+                    <div class="text-3xl font-black text-emerald-400">500+ كجم</div>
+                    <div class="text-xs text-slate-400 mt-1">ورق معاد تدويره</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-black text-teal-400">30%</div>
+                    <div class="text-xs text-slate-400 mt-1">وفر في استهلاك الطاقة</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-black text-cyan-400">120</div>
+                    <div class="text-xs text-slate-400 mt-1">شجرة تم إنقاذها</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-black text-lime-400">100%</div>
+                    <div class="text-xs text-slate-400 mt-1">مشاركة طلابية</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section (Interactive) -->
+    <section id="calculator" class="py-24 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-emerald-400 font-bold text-sm tracking-wider uppercase">تجربة تفاعلية للجنة التحكيم</span>
+                <h2 class="text-3xl font-bold mt-2">حاسبة الأثر البيئي لإعادة التدوير</h2>
+                <p class="text-slate-400 text-sm mt-2">ادخل كمية الورق أو البلاستيك المستهلك واكتشف الفائدة البيئية الناتجة</p>
+            </div>
+
+            <div class="bg-slate-950 rounded-3xl p-6 md:p-10 border border-slate-800 shadow-2xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">كمية الورق المستهلك شهرياً (كجم):</label>
+                            <input type="number" id="paperInput" value="50" oninput="calculateImpact()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-emerald-400 font-bold focus:outline-none focus:border-emerald-500">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">عدد العلب البلاستيكية شهرياً:</label>
+                            <input type="number" id="plasticInput" value="200" oninput="calculateImpact()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-emerald-400 font-bold focus:outline-none focus:border-emerald-500">
+                        </div>
+                    </div>
+
+                    <div class="bg-emerald-950/30 border border-emerald-900/50 p-6 rounded-2xl space-y-4">
+                        <h3 class="text-lg font-bold text-emerald-300 border-b border-emerald-900/50 pb-2">الأثر البيئي المتوقع سنوياً:</h3>
+                        
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-slate-300"><i class="fa-solid fa-tree text-emerald-400 ml-2"></i>أشجار تم إنقاذها:</span>
+                            <span id="treesSaved" class="text-xl font-extrabold text-emerald-400">10 أشجار</span>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-slate-300"><i class="fa-solid fa-bolt text-yellow-400 ml-2"></i>طاقة موفرة (كيلوواط):</span>
+                            <span id="energySaved" class="text-xl font-extrabold text-yellow-400">2,000 KWh</span>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-slate-300"><i class="fa-solid fa-droplet text-cyan-400 ml-2"></i>توفير مياه (لتر):</span>
+                            <span id="waterSaved" class="text-xl font-extrabold text-cyan-400">15,000 لتر</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pillars Section -->
+    <section id="pillars" class="py-24 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">ركائز المشروع الأساسية</h2>
+                <p class="text-slate-400">خطتنا لتحويل المدرسة إلى بيئة خضراء مستدامة بالكامل</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl hover:border-emerald-500/50 transition">
+                    <div class="w-12 h-12 rounded-xl emerald-gradient flex items-center justify-center text-white text-xl mb-6">
+                        <i class="fa-solid fa-recycle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">الفرز الذكي للنفايات</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">وضع حاويات ذكية في المدرسة لتشجيع الفرز المباشر للورق والبلاستيك وتحفيز الطلاب بنقاط مكافآت.</p>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl hover:border-emerald-500/50 transition">
+                    <div class="w-12 h-12 rounded-xl emerald-gradient flex items-center justify-center text-white text-xl mb-6">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">الطاقة النظيفة والترشيد</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">الاعتماد على حساسات حركة لإطفاء الإضاءة التلقائي والتوعية باستخدام الطاقة الشمسية.</p>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl hover:border-emerald-500/50 transition">
+                    <div class="w-12 h-12 rounded-xl emerald-gradient flex items-center justify-center text-white text-xl mb-6">
+                        <i class="fa-solid fa-hands-holding-circle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">التوعية والمشاركة</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">ورق عمل ومسابقات دورية بين الصفوف لأفضل صف يطبق المعايير البيئية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 py-12 border-t border-slate-900 text-center text-slate-500 text-sm">
+        <p>مشروع مبادرة مدرسة خضراء © تقديم للمسابقة المدرسية</p>
+    </footer>
+
+    <script>
+        function calculateImpact() {
+            const paper = parseFloat(document.getElementById('paperInput').value) || 0;
+            const plastic = parseFloat(document.getElementById('plasticInput').value) || 0;
+
+            // Mathematical formulas for environmental impact
+            const trees = Math.round((paper * 12 * 17) / 1000);
+            const energy = Math.round((paper * 12 * 4) + (plastic * 12 * 0.5));
+            const water = Math.round(paper * 12 * 26);
+
+            document.getElementById('treesSaved').innerText = `${trees} شجرة`;
+            document.getElementById('energySaved').innerText = `${energy.toLocaleString()} KWh`;
+            document.getElementById('waterSaved').innerText = `${water.toLocaleString()} لتر`;
+        }
+
+        // Run calculation on initial load
+        calculateImpact();
+    </script>
+</body>
+</html>
